@@ -13,6 +13,23 @@
   <button type="submit">Subscribe</button>
 </form>
 
+<!-- Formular-Popup -->
+<div id="newsletterOverlay" class="overlay">
+  <div class="popup">
+    <span id="closePopup" class="close">&times;</span>
+    <form id="subscribeForm">
+      <input type="email" id="email" required placeholder="Deine E-Mail">
+      <input type="text" id="name" required placeholder="Dein Name">
+      <input type="text" id="book" required placeholder="Dein Lieblingsbuch">
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+</div>
+
+<!-- Trigger am unteren Rand -->
+<p class="newsletterTrigger">Newsletter abonnieren</p>
+
+
 <script type="module">
   import { createClient } from "https://esm.sh/@supabase/supabase-js@2";
 
@@ -39,6 +56,23 @@
     } else {
       alert("Vielen Dank für die Anmeldung!");
     }
+  });
+
+  const overlay = document.getElementById('newsletterOverlay');
+  const trigger = document.querySelector('.newsletterTrigger');
+  const close = document.getElementById('closePopup');
+
+  trigger.addEventListener('click', () => {
+    overlay.style.display = 'flex';
+  });
+
+  close.addEventListener('click', () => {
+    overlay.style.display = 'none';
+  });
+
+  // optional: Klick auf Hintergrund schließt ebenfalls
+  overlay.addEventListener('click', (e) => {
+    if (e.target === overlay) overlay.style.display = 'none';
   });
 
 </script>

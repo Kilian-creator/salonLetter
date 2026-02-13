@@ -44,3 +44,48 @@ input[type="email"]:focus {
   outline: none;                    /* Standard-Fokus-Rahmen entfernen */
   transform: scale(1.02);           /* leichtes Vergrößern für Hover-Effekt */
 }
+
+/* Overlay hinter dem Formular */
+.overlay {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.5);
+  display: none;        /* standardmäßig versteckt */
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+/* Das Popup selbst */
+.popup {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  box-shadow: 0 0 15px 5px rgba(255,223,0,0.6);
+}
+
+/* Schließen-Kreuz */
+.close {
+  align-self: flex-end;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+/* Link unten auf der Seite */
+.newsletterTrigger {
+  position: fixed;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 14px;
+  cursor: pointer;
+  color: #007bff;
+  text-decoration: underline;
+}
+
