@@ -89,3 +89,24 @@ input[type="email"]:focus {
   text-decoration: underline;
 }
 
+.policy {
+  margin-top: 40px;
+  padding: 20px;
+  background-color: #f9f9f9; /* helles Hintergrundfeld */
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  font-size: 14px;
+  line-height: 1.5;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto; /* zentriert */
+}
+
+.policy h2, .policy h3 {
+  color: #333;
+}
+
+.policy ul {
+  margin-left: 20px;
+}
+
