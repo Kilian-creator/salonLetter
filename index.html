@@ -88,22 +88,24 @@
     }
   });
 
-  const overlay = document.getElementById('newsletterOverlay');
-  const trigger = document.querySelector('.newsletterTrigger');
-  const close = document.getElementById('closePopup');
+  const policyPopup = document.getElementById('policyPopup');
+const openPolicy = document.getElementById('openPolicy');
+const closePolicy = document.getElementById('closePolicy');
 
-  trigger.addEventListener('click', () => {
-    overlay.style.display = 'flex';
-  });
+openPolicy.addEventListener('click', (e) => {
+  e.preventDefault();
+  policyPopup.style.display = 'flex';
+});
 
-  close.addEventListener('click', () => {
-    overlay.style.display = 'none';
-  });
+closePolicy.addEventListener('click', () => {
+  policyPopup.style.display = 'none';
+});
 
-  // optional: Klick auf Hintergrund schließt ebenfalls
-  overlay.addEventListener('click', (e) => {
-    if (e.target === overlay) overlay.style.display = 'none';
-  });
+// Klick außerhalb des Popups schließt es
+policyPopup.addEventListener('click', (e) => {
+  if (e.target === policyPopup) policyPopup.style.display = 'none';
+});
+
 
 </script>
 

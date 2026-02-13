@@ -45,18 +45,6 @@ input[type="email"]:focus {
   transform: scale(1.02);           /* leichtes Vergrößern für Hover-Effekt */
 }
 
-/* Overlay hinter dem Formular */
-.overlay {
-  position: fixed;
-  top: 0; left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0,0,0,0.5);
-  display: none;        /* standardmäßig versteckt */
-  justify-content: center;
-  align-items: center;
-  z-index: 1000;
-}
 
 /* Overlay hinter dem Popup */
 .overlay {
@@ -87,5 +75,10 @@ input[type="email"]:focus {
   align-self: flex-end;
   cursor: pointer;
   font-size: 20px;
+}
+
+#subscribeForm p {
+    text-align: center;
+    margin-top: 5px;
 }
 
