@@ -12,15 +12,14 @@
   <button type="submit">Subscribe</button>
 </form>
 
-<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/dist/supabase.min.js"></script>
+<script type="module">
+  import { createClient } from "https://esm.sh/@supabase/supabase-js@2";
 
-<script>
-  const supabase = window.supabase.createClient(
+  const supabase = createClient(
     "https://nwpwxlurmlibabkrlifo.supabase.co",
-    "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im53cHd4bHVybWxpYmFia3JsaWZvIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzA4OTExMzEsImV4cCI6MjA4NjQ2NzEzMX0.25gcXHLYNyC6uGFtnq2DMRd4WHVpEC7JYzx3AwlOt6A"
+    "my_Key"
   );
 
-  // Formular-Submit-Handler
   document.getElementById("subscribeForm").addEventListener("submit", async (e) => {
     e.preventDefault();
 
@@ -28,31 +27,20 @@
     const name = document.getElementById("name").value;
     const book = document.getElementById("book").value;
 
-    const { error } = await supabase
+    const { data, error } = await supabase
       .from("subscribers")
       .insert([{ email, name, book }]);
 
+    console.log(data, error);
+
     if (error) {
-      console.error(error);
-      alert("Diese E-Mail ist bereits registriert oder ungültig.");
+      alert(error.message);
     } else {
-      alert("Vielen Dank für die Anmeldung, wir melden uns bald bei dir!");
+      alert("Vielen Dank für die Anmeldung!");
     }
   });
 
-  // Echtzeit-Listener für neue Anmeldungen
-  supabase
-    .channel('subscribers')
-    .on(
-      'postgres_changes',
-      { event: 'INSERT', schema: 'public', table: 'subscribers' },
-      (payload) => {
-        alert("Neue Anmeldung: " + payload.new.email)
-      }
-    )
-    .subscribe()
 </script>
-
 
 </body>
 </html>
