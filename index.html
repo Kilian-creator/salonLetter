@@ -11,49 +11,54 @@
   <input type="text" id="name" required placeholder="Dein Name">
   <input type="text" id="book" required placeholder="Dein Lieblingsbuch">
   <button type="submit">Subscribe</button>
+  <p style="font-size:12px; margin-top:5px;">
+    <a href="#" id="openPolicy">Datenschutzrichtlinie lesen</a>
+  </p>
 </form>
 
-<div id="datenschutz" class="policy">
-  <h2>Datenschutzerklärung für dein Newsletter-Formular</h2>
-  <p><strong>Gültig ab:</strong> [Datum einsetzen]</p>
-  <p>Wir freuen uns über dein Interesse an unserem Newsletter! Der Schutz deiner persönlichen Daten ist uns sehr wichtig.</p>
-  
-  <h3>1. Erhobene Daten</h3>
-  <p>Wenn du unser Formular ausfüllst, erfassen wir die folgenden Informationen:</p>
-  <ul>
-    <li>Dein Name</li>
-    <li>Deine E-Mail-Adresse</li>
-    <li>Dein Lieblingsbuch</li>
-  </ul>
-  <p>Diese Daten werden ausschließlich für die Verwaltung des Newsletters und die Zusendung von Informationen genutzt.</p>
-  
-  <h3>2. Zweck der Datenverarbeitung</h3>
-  <p>Die von dir angegebenen Daten verwenden wir, um:</p>
-  <ul>
-    <li>dich in unseren Newsletter aufzunehmen</li>
-    <li>dir Neuigkeiten, Angebote oder Informationen rund um unsere Inhalte zu senden</li>
-  </ul>
-  <p>Eine Weitergabe deiner Daten an Dritte erfolgt nicht, außer wir sind gesetzlich dazu verpflichtet.</p>
-  
-  <h3>3. Einwilligung</h3>
-  <p>Mit dem Klick auf den „Submit“-Button erklärst du dich ausdrücklich damit einverstanden, dass wir deine Daten gemäß dieser Datenschutzrichtlinie verarbeiten.</p>
-  
-  <h3>4. Speicherung und Sicherheit</h3>
-  <p>Wir speichern deine Daten auf sicheren Servern und setzen angemessene technische und organisatorische Maßnahmen ein, um die Daten vor unbefugtem Zugriff, Verlust oder Missbrauch zu schützen.</p>
-  
-  <h3>5. Deine Rechte</h3>
-  <p>Du hast jederzeit das Recht:</p>
-  <ul>
-    <li>Auskunft über deine gespeicherten Daten zu erhalten</li>
-    <li>die Berichtigung unrichtiger Daten zu verlangen</li>
-    <li>die Löschung deiner Daten zu beantragen</li>
-    <li>deine Einwilligung zur Datenverarbeitung zu widerrufen</li>
-  </ul>
-  <p>Wenn du eines dieser Rechte wahrnehmen möchtest, kontaktiere uns bitte unter: [E-Mail-Adresse einsetzen].</p>
-  
-  <h3>6. Änderungen der Datenschutzrichtlinie</h3>
-  <p>Wir behalten uns vor, diese Richtlinie bei Bedarf anzupassen. Die jeweils aktuelle Version wird auf unserer Website veröffentlicht.</p>
+<div id="policyPopup" class="overlay">
+  <div class="popup">
+    <span id="closePolicy" class="close">&times;</span>
+    
+    <h2>Datenschutzerklärung für dein Newsletter-Formular</h2>
+    <p><strong>Gültig ab:</strong> [Datum einsetzen]</p>
+    <p>Wir freuen uns über dein Interesse an unserem Newsletter! Der Schutz deiner persönlichen Daten ist uns sehr wichtig.</p>
+    
+    <h3>1. Erhobene Daten</h3>
+    <ul>
+      <li>Dein Name</li>
+      <li>Deine E-Mail-Adresse</li>
+      <li>Dein Lieblingsbuch</li>
+    </ul>
+    
+    <h3>2. Zweck der Datenverarbeitung</h3>
+    <ul>
+      <li>dich in unseren Newsletter aufzunehmen</li>
+      <li>dir Neuigkeiten, Angebote oder Informationen rund um unsere Inhalte zu senden</li>
+    </ul>
+    <p>Eine Weitergabe deiner Daten an Dritte erfolgt nicht, außer wir sind gesetzlich dazu verpflichtet.</p>
+    
+    <h3>3. Einwilligung</h3>
+    <p>Mit dem Klick auf den „Submit“-Button erklärst du dich ausdrücklich damit einverstanden, dass wir deine Daten gemäß dieser Datenschutzrichtlinie verarbeiten.</p>
+    
+    <h3>4. Speicherung und Sicherheit</h3>
+    <p>Wir speichern deine Daten auf sicheren Servern und setzen angemessene technische und organisatorische Maßnahmen ein.</p>
+    
+    <h3>5. Deine Rechte</h3>
+    <p>Du hast jederzeit das Recht:</p>
+    <ul>
+      <li>Auskunft über deine gespeicherten Daten zu erhalten</li>
+      <li>die Berichtigung unrichtiger Daten zu verlangen</li>
+      <li>die Löschung deiner Daten zu beantragen</li>
+      <li>deine Einwilligung zur Datenverarbeitung zu widerrufen</li>
+    </ul>
+    <p>Wenn du eines dieser Rechte wahrnehmen möchtest, kontaktiere uns bitte unter: [E-Mail-Adresse einsetzen].</p>
+    
+    <h3>6. Änderungen</h3>
+    <p>Wir behalten uns vor, diese Richtlinie bei Bedarf anzupassen. Die jeweils aktuelle Version wird auf unserer Website veröffentlicht.</p>
+  </div>
 </div>
+
 
 <!-- Trigger am unteren Rand -->
 <p class="newsletterTrigger">Policies</p>
