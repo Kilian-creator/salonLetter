@@ -58,19 +58,6 @@ input[type="email"]:focus {
   z-index: 1000;
 }
 
-/* Das Popup selbst */
-.popup {
-  background: white;
-  padding: 20px;
-  border-radius: 12px;
-  width: 300px;
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-  box-shadow: 0 0 15px 5px rgba(255,223,0,0.6);
-}
-
-
 /* Overlay hinter dem Popup */
 .overlay {
   position: fixed;
