@@ -30,9 +30,10 @@
 
     const { error } = await supabase
       .from("subscribers")
-      .insert([{ email }]);
+      .insert([{ email, name, book }]);
 
     if (error) {
+      console.error(error);
       alert("Diese E-Mail ist bereits registriert oder ungültig.");
     } else {
       alert("Vielen Dank für die Anmeldung, wir melden uns bald bei dir!");
