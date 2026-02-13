@@ -29,7 +29,9 @@
 
     const { data, error } = await supabase
       .from("subscribers")
-      .insert([{ email, name, book }]);
+      .insert([{ email: email,
+                name: name,
+                favorite_book: book  }]);
 
     console.log(data, error);
 
