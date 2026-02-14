@@ -10,21 +10,39 @@
   <input type="email" id="email" required placeholder="Deine E-Mail">
   <input type="text" id="name" required placeholder="Dein Name">
   <input type="text" id="book" required placeholder="Dein Lieblingsbuch">
-  
-  //Button mit SVG-Grafik
   <button type="submit" class="subscribe-btn">
-  <svg width="200" height="60" viewBox="0 0 200 60">
-    <rect x="0" y="0" width="200" height="60" rx="30"
-          fill="red" stroke="black" stroke-width="4"/>
-    <text x="100" y="38"
+  <svg width="220" height="220" viewBox="0 0 200 200">
+    
+    <!-- 10-zackiger Comic-Stern -->
+    <polygon
+      points="
+      100,10
+      120,70
+      185,70
+      135,110
+      155,175
+      100,140
+      45,175
+      65,110
+      15,70
+      80,70"
+      fill="red"
+      stroke="black"
+      stroke-width="8"
+      stroke-linejoin="round"/>
+
+    <!-- Text -->
+    <text x="100" y="115"
           text-anchor="middle"
-          font-size="22"
+          font-size="20"
           font-weight="bold"
-          fill="white">
+          fill="black">
       Subscribe
     </text>
+
   </svg>
 </button>
+
   <p style="font-size:12px; margin-top:5px;">
     <a href="#" id="openPolicy">Datenschutzrichtlinie lesen</a>
   </p>
