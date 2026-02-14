@@ -82,3 +82,19 @@ input[type="email"]:focus {
     margin-top: 5px;
 }
 
+footer {
+    text-align: center;
+    padding: 20px;
+}
+
+.footer-logo {
+    width: 120px;
+}
+
+.subscribe-btn {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
+

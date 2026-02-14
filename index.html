@@ -10,7 +10,21 @@
   <input type="email" id="email" required placeholder="Deine E-Mail">
   <input type="text" id="name" required placeholder="Dein Name">
   <input type="text" id="book" required placeholder="Dein Lieblingsbuch">
-  <button type="submit">Subscribe</button>
+  
+  //Button mit SVG-Grafik
+  <button type="submit" class="subscribe-btn">
+  <svg width="200" height="60" viewBox="0 0 200 60">
+    <rect x="0" y="0" width="200" height="60" rx="30"
+          fill="red" stroke="black" stroke-width="4"/>
+    <text x="100" y="38"
+          text-anchor="middle"
+          font-size="22"
+          font-weight="bold"
+          fill="white">
+      Subscribe
+    </text>
+  </svg>
+</button>
   <p style="font-size:12px; margin-top:5px;">
     <a href="#" id="openPolicy">Datenschutzrichtlinie lesen</a>
   </p>
@@ -58,6 +72,11 @@
     <p>Wir behalten uns vor, diese Richtlinie bei Bedarf anzupassen. Die jeweils aktuelle Version wird auf unserer Website veröffentlicht.</p>
   </div>
 </div>
+
+<footer>
+        <img src="MGPK_Logo_Screen_rgb_rot.png" alt="Firmenlogo" class="footer-logo">
+        <img src="MGPK_Logo_Screen_rgb_rot.png" alt="Firmenlogo" class="footer-logo">
+</footer>
 
 
 <script type="module">
