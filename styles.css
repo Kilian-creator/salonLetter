@@ -1,6 +1,6 @@
 body {
     display: flex;
-    justify-content: center;   /* horizontal zentriert */
+    justify-content: flex-start;   /* horizontal zentriert */
     align-items: center;       /* vertikal zentriert */
     height: 100vh;             /* volle Bildschirmhöhe */
     margin: 0;
@@ -23,6 +23,7 @@ html, body {
     flex-direction: column;    /* untereinander */
     gap: 15px;                 /* Abstand zwischen Elementen */
     width: 300px;
+    margin-top: 15vh;
 }
 
 input, button {
@@ -37,7 +38,7 @@ input[type="email"] {
   border-radius: 10px;              /* runde Ecken */
   padding: 10px;                    /* Abstand innen */
   font-size: 16px;
-  box-shadow: 0 0 15px 5px rgba(255, 223, 0, 0.6); /* gelber Schatten */
+  box-shadow: 0 0 15px 5px rgba(255, 0, 0, 0.6); /* gelber Schatten */
   transition: box-shadow 0.3s ease, transform 0.2s ease;
 }
 
@@ -73,7 +74,7 @@ input[type="email"]:focus {
   max-width: 600px;
   max-height: 80vh;
   overflow-y: auto;
-  box-shadow: 0 0 15px 5px rgba(255, 0, 0, 0.6); /* roter Schatten */
+  box-shadow: 0 0 15px 5px rgba(255, 238, 0, 0.849); /* roter Schatten */
 }
 
 /* Schließen-Kreuz */
@@ -111,3 +112,8 @@ footer {
   cursor: pointer;
 }
 
+h1 {
+    color: red;
+    margin-bottom: 30px;
+    font-size: 32px;
+}
