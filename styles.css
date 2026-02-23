@@ -4,7 +4,7 @@ body {
     align-items: center;       /* vertikal zentriert */
     height: 100vh;             /* volle Bildschirmhöhe */
     margin: 0;
-    background-image: url('hintergrund.jpg');  /* Bilddatei */
+    background-image: url('hintergrund.png');  /* Bilddatei */
     background-size: cover;      /* Bild füllt den gesamten Bereich */
     background-position: center; /* zentriert */
     background-repeat: no-repeat; /* nicht kacheln */
@@ -73,7 +73,7 @@ input[type="email"]:focus {
   max-width: 600px;
   max-height: 80vh;
   overflow-y: auto;
-  box-shadow: 0 0 15px 5px rgba(255,223,0,0.6); /* gelber Schatten */
+  box-shadow: 0 0 15px 5px rgba(255, 0, 0, 0.6); /* roter Schatten */
 }
 
 /* Schließen-Kreuz */
@@ -96,8 +96,12 @@ footer {
     bottom: 0;
 }
 
-.footer-logo {
+.gapa-logo {
     width: 120px;
+}
+
+.impuls-logo {
+    width: 60px;
 }
 
 .subscribe-btn {
