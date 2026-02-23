@@ -21,7 +21,7 @@ html, body {
 #subscribeForm {
     display: flex;
     flex-direction: column;    /* untereinander */
-    gap: 15px;                 /* Abstand zwischen Elementen */
+    gap: 5px;                 /* Abstand zwischen Elementen */
     width: 300px;
     margin-top: 15vh;
 }
@@ -38,7 +38,7 @@ input[type="email"] {
   border-radius: 10px;              /* runde Ecken */
   padding: 10px;                    /* Abstand innen */
   font-size: 16px;
-  box-shadow: 0 0 15px 5px rgba(255, 0, 0, 0.6); /* gelber Schatten */
+  box-shadow: 0 0 15px 5px rgba(255, 251, 0, 0.6); /* gelber Schatten */
   transition: box-shadow 0.3s ease, transform 0.2s ease;
 }
 
@@ -47,7 +47,7 @@ input[type="text"]:hover,
 input[type="text"]:focus,
 input[type="email"]:hover,
 input[type="email"]:focus {
-  box-shadow: 0 0 15px 5px rgba(0, 123, 255, 0.6); /* blau transparent */
+  box-shadow: 0 0 15px 5px rgba(255, 0, 0, 0.6); /* blau transparent */
   outline: none;                    /* Standard-Fokus-Rahmen entfernen */
   transform: scale(1.02);           /* leichtes Vergrößern für Hover-Effekt */
 }
@@ -98,7 +98,7 @@ footer {
 }
 
 .gapa-logo {
-    width: 120px;
+    width: 180px;
 }
 
 .impuls-logo {
@@ -115,5 +115,6 @@ footer {
 h1 {
     color: red;
     margin-bottom: 30px;
-    font-size: 32px;
+    font-size: 80px;
+    padding: 20px;
 }
