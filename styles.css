@@ -21,6 +21,7 @@ html, body {
 #subscribeForm {
     display: flex;
     flex-direction: column;    /* untereinander */
+    gap: 15px;              /* Abstand zwischen den Elementen */
     width: 300px;
     margin-top: 15vh;
 }
@@ -114,6 +115,6 @@ footer {
 h1 {
     color: red;
     margin-bottom: 30px;
-    font-size: 90px;
-    padding: 20px;
+    font-size: 100px;
+    padding: 40px;
 }
