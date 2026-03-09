@@ -111,10 +111,17 @@ input[type="email"]:focus {
 }
 
 h1 {
-    color: red;
-    margin-bottom: 30px;
+    color: black;
+    margin-bottom: 20px;
+    margin-top: 20px;
     font-size: 120px;
-    padding: 70px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: bold;
 }
+
+.subscribe-btn {
+  color: black;
+  font-weight: bold;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
