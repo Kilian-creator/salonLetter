@@ -28,7 +28,7 @@ html, body {
 
 input, button {
     padding: 10px;
-    font-size: 16px;
+    font-size: 24px;
   }
 
   input[type="text"],
@@ -37,8 +37,8 @@ input[type="email"] {
   border: none;                     /* kein Standard-Rahmen */
   border-radius: 10px;              /* runde Ecken */
   padding: 10px;                    /* Abstand innen */
-  font-size: 16px;
-  box-shadow: 0 0 15px 5px rgba(255, 251, 0, 0.6); /* gelber Schatten */
+  font-size: 24px;
+  box-shadow: 0 0 15px 5px rgba(6, 126, 2, 0.6); /* gelber Schatten */
   transition: box-shadow 0.3s ease, transform 0.2s ease;
 }
 
@@ -47,7 +47,7 @@ input[type="text"]:hover,
 input[type="text"]:focus,
 input[type="email"]:hover,
 input[type="email"]:focus {
-  box-shadow: 0 0 15px 5px rgba(255, 0, 0, 0.6); /* blau transparent */
+  box-shadow: 0 0 15px 5px rgb(126, 76, 2); /* blau transparent */
   outline: none;                    /* Standard-Fokus-Rahmen entfernen */
   transform: scale(1.02);           /* leichtes Vergrößern für Hover-Effekt */
 }
@@ -74,7 +74,7 @@ input[type="email"]:focus {
   max-width: 600px;
   max-height: 80vh;
   overflow-y: auto;
-  box-shadow: 0 0 15px 5px rgba(255, 238, 0, 0.849); /* roter Schatten */
+  box-shadow: 0 0 15px 5px rgba(6, 126, 2, 0.6); /* grüner Schatten */
 }
 
 /* Schließen-Kreuz */
@@ -90,19 +90,17 @@ input[type="email"]:focus {
     
 }
 
-footer {
-    text-align: center;
-    padding: 20px;
-    position: fixed;
-    bottom: 0;
-}
-
 .gapa-logo {
-    width: 180px;
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  width: 180px;
 }
 
-.impuls-logo {
-    width: 60px;
+.impuls-logo {position: fixed;
+  top: 20px;
+  right: 20px;
+  width: 60px;
 }
 
 .subscribe-btn {
@@ -115,6 +113,8 @@ footer {
 h1 {
     color: red;
     margin-bottom: 30px;
-    font-size: 100px;
+    font-size: 120px;
     padding: 70px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
 }
