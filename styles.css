@@ -1,3 +1,10 @@
+@font-face {
+    font-family: 'Iodine';
+    src: url('../SAFEITRIAL___.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
 body {
     display: flex;
     justify-content: flex-start;   /* horizontal zentriert */
@@ -23,7 +30,7 @@ html, body {
     flex-direction: column;    /* untereinander */
     gap: 15px;              /* Abstand zwischen den Elementen */
     width: 300px;
-    margin-top: 15vh;
+    margin-top: 12vh;
 }
 
 input, button {
@@ -98,8 +105,8 @@ input[type="email"]:focus {
 }
 
 .impuls-logo {position: fixed;
-  top: 20px;
-  right: 20px;
+  top: 40px;
+  right: 40px;
   width: 60px;
 }
 
@@ -113,10 +120,9 @@ input[type="email"]:focus {
 h1 {
     color: black;
     margin-bottom: 20px;
-    margin-top: 20px;
+    margin-top: 480px;
     font-size: 120px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-weight: bold;
+    font-family: "Iodine", sans-serif;
 }
 
 .subscribe-btn {
