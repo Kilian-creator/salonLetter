@@ -30,12 +30,13 @@ html, body {
     flex-direction: column;    /* untereinander */
     gap: 15px;              /* Abstand zwischen den Elementen */
     width: 300px;
-    margin-top: 12vh;
+    margin-top: 33vh;
 }
 
 input, button {
     padding: 10px;
     font-size: 24px;
+    font-family: "Iodine", sans-serif;
   }
 
   input[type="text"],
@@ -101,13 +102,13 @@ input[type="email"]:focus {
   position: fixed;
   top: 20px;
   left: 20px;
-  width: 180px;
+  width: 300px;
 }
 
 .impuls-logo {position: fixed;
   top: 40px;
   right: 40px;
-  width: 60px;
+  width: 100px;
 }
 
 .subscribe-btn {
@@ -121,7 +122,7 @@ input[type="email"]:focus {
 h1 {
     color: black;
     margin-bottom: 20px;
-    margin-top: 300px;
+    margin-top: 25vh;
     font-size: 180px;
     font-family: "Iodine", sans-serif;
 }
