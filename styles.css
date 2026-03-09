@@ -115,13 +115,14 @@ input[type="email"]:focus {
   border: none;
   padding: 0;
   cursor: pointer;
+  font-family: "Iodine", sans-serif;
 }
 
 h1 {
     color: black;
     margin-bottom: 20px;
-    margin-top: 480px;
-    font-size: 120px;
+    margin-top: 300px;
+    font-size: 180px;
     font-family: "Iodine", sans-serif;
 }
 
