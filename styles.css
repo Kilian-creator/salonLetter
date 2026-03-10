@@ -23,12 +23,16 @@ html, body {
   margin: 0;
 }
 
-#subscribeForm {
-    position: absolute;
-    top: 33vh;
-    left: 50%;
-    transform: translateX(-50%);
+h1 {
+    color: black;
+    margin-top: 30vh;   /* ungefähr gleiche Position wie vorher */
+    margin-bottom: 20px; /* kleiner Abstand zum Formular */
+    font-size: 180px;
+    font-family: "Iodine", sans-serif;
+    text-align: center;
+}
 
+#subscribeForm {
     display: flex;
     flex-direction: column;
     gap: 15px;
@@ -100,6 +104,14 @@ input[type="email"]:focus {
     
 }
 
+.subscribe-btn {
+  background: none;
+  border: none;
+  color: black;
+  font-weight: bold;
+  font-family: "Iodine", sans-serif;
+}
+
 .gapa-logo {
   position: fixed;
   top: 20px;
@@ -111,20 +123,5 @@ input[type="email"]:focus {
   top: 40px;
   right: 40px;
   width: 100px;
-}
-
-h1 {
-    color: black;
-    margin-top: 25vh;
-    margin-bottom: 75vh;
-    font-size: 180px;
-    font-family: "Iodine", sans-serif;
-}
-
-.subscribe-btn {
-  background: none;
-  color: black;
-  font-weight: bold;
-  font-family: "Iodine", sans-serif;
 }
 
