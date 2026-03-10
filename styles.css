@@ -7,17 +7,15 @@
 
 body {
     display: flex;
-    justify-content: flex-start;   /* horizontal zentriert */
+    flex-direction: column;
     align-items: center;       /* vertikal zentriert */
     height: 100vh;             /* volle Bildschirmhöhe */
     margin: 0;
+
     background-image: url('hintergrund.png');  /* Bilddatei */
     background-size: cover;      /* Bild füllt den gesamten Bereich */
     background-position: center; /* zentriert */
     background-repeat: no-repeat; /* nicht kacheln */
-    height: 100vh;               /* volle Höhe */
-    margin: 0;
-    flex-direction: column;
   }
 
 html, body {
