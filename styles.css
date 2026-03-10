@@ -25,7 +25,7 @@ html, body {
 
 h1 {
     color: black;
-    margin-top: 30vh;   /* ungefähr gleiche Position wie vorher */
+    margin-top: 25vh;   /* ungefähr gleiche Position wie vorher */
     margin-bottom: 20px; /* kleiner Abstand zum Formular */
     font-size: 180px;
     font-family: "Iodine", sans-serif;
