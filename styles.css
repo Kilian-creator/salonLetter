@@ -31,7 +31,6 @@ html, body {
     gap: 15px;              /* Abstand zwischen den Elementen */
     width: 300px;
     margin-top: 33vh;
-    margin-bottom: 66vh;
 }
 
 input, button {
@@ -120,6 +119,7 @@ h1 {
 }
 
 .subscribe-btn {
+  background: none;
   color: black;
   font-weight: bold;
   font-family: "Iodine", sans-serif;
