@@ -31,12 +31,12 @@ html, body {
     gap: 15px;              /* Abstand zwischen den Elementen */
     width: 300px;
     margin-top: 33vh;
+    margin-bottom: 66vh;
 }
 
 input, button {
     padding: 10px;
     font-size: 24px;
-    font-family: "Iodine", sans-serif;
   }
 
   input[type="text"],
@@ -111,18 +111,10 @@ input[type="email"]:focus {
   width: 100px;
 }
 
-.subscribe-btn {
-  background: none;
-  border: none;
-  padding: 0;
-  cursor: pointer;
-  font-family: "Iodine", sans-serif;
-}
-
 h1 {
     color: black;
-    margin-bottom: 20px;
     margin-top: 25vh;
+    margin-bottom: 75vh;
     font-size: 180px;
     font-family: "Iodine", sans-serif;
 }
@@ -130,6 +122,6 @@ h1 {
 .subscribe-btn {
   color: black;
   font-weight: bold;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: "Iodine", sans-serif;
 }
 
